@@ -14,9 +14,8 @@ it('login vist', function(){
     cy.get('#menu_admin_Organization').click()
 })
 
-it.only('Translink app', function(){
-    cy.visit('https://translink.com.au/')
-    cy.get('#Start').type('South Bank')
-    cy.get(':nth-child(3) > .input-group > .input-group-addon > .detect-location-icon').click()
-    cy.get('.btn-loading').click()
+it.only('Vanity', function(){
+    cy.visit('https://google.com.au/')
+    cy.get('.gLFyf').type('Komalpreet Singh Maan.{enter}')
+    cy.get('[data-hveid="CAYQAA"] > .tF2Cxc > .yuRUbf > a > .LC20lb').click()
 })
