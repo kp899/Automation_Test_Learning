@@ -14,8 +14,9 @@ it('login vist', function(){
     cy.get('#menu_admin_Organization').click()
 })
 
-it.only('Vanity', function(){
-    cy.visit('https://google.com.au/')
-    cy.get('.gLFyf').type('Komalpreet Singh Maan.{enter}')
-    cy.get('[data-hveid="CAYQAA"] > .tF2Cxc > .yuRUbf > a > .LC20lb').click()
+it.only('Search', function(){
+    cy.visit('https://youtube.com.au/')
+    cy.get('#search-input > #search').type('Automation Testing{enter}')
+    //cy.contains('Automated').click()
+
 })
