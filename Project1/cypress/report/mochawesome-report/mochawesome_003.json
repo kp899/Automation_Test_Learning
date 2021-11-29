@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-29T00:25:49.660Z",
+    "end": "2021-11-29T00:26:06.630Z",
+    "duration": 16970,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "78ed46bb-adb6-4ca1-8f6a-11d6a9aa6b06",
+      "title": "",
+      "fullFile": "cypress/integration/orang_hrm.js",
+      "file": "cypress/integration/orang_hrm.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "LoginTests",
+          "fullTitle": "LoginTests",
+          "timedOut": null,
+          "duration": 12998,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://opensource-demo.orangehrmlive.com/');\ncy.get('#divUsername > .form-hint').type('Admin');\ncy.get('#txtPassword').type('admin123');\ncy.get('#btnLogin').click();\ncy.get('#menu_admin_viewAdminModule > b').click();\ncy.get('#menu_admin_viewAdminModule > b').click();\ncy.get('#btnAdd').click(); //cy.get('#systemUser_userType').find('#')",
+          "err": {},
+          "uuid": "5cbc0220-4d84-40ac-96d6-156a1448d7d2",
+          "parentUUID": "78ed46bb-adb6-4ca1-8f6a-11d6a9aa6b06",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "5cbc0220-4d84-40ac-96d6-156a1448d7d2"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 12998,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.0.1"
+    }
+  }
+}

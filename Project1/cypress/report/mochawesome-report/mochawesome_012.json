@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-29T04:19:08.785Z",
+    "end": "2021-11-29T04:19:21.461Z",
+    "duration": 12676,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ecf6d950-41c0-40a0-91d0-80b02650b906",
+      "title": "",
+      "fullFile": "cypress/integration/my_first_test.js",
+      "file": "cypress/integration/my_first_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Search",
+          "fullTitle": "Search",
+          "timedOut": null,
+          "duration": 9844,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://youtube.com.au/');\ncy.get('#search-input > #search').type('Automation Testing{enter}'); //cy.contains('Automated').click()",
+          "err": {},
+          "uuid": "669b2dc6-7836-4017-9ae5-b1eac10490c5",
+          "parentUUID": "ecf6d950-41c0-40a0-91d0-80b02650b906",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "669b2dc6-7836-4017-9ae5-b1eac10490c5"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 9844,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.0.1"
+    }
+  }
+}
