@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 10,
-    "tests": 10,
-    "passes": 10,
+    "suites": 15,
+    "tests": 15,
+    "passes": 15,
     "pending": 0,
     "failures": 0,
     "start": "2021-11-29T00:25:00.400Z",
-    "end": "2021-11-29T02:46:34.448Z",
-    "duration": 104845,
-    "testsRegistered": 10,
+    "end": "2021-11-29T04:19:59.572Z",
+    "duration": 148497,
+    "testsRegistered": 15,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -364,6 +364,201 @@
       "pending": [],
       "skipped": [],
       "duration": 14708,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "794a1507-9a8f-43ef-abfa-a10485170999",
+      "title": "",
+      "fullFile": "cypress/integration/Assertions.ts",
+      "file": "cypress/integration/Assertions.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Learning Assertions",
+          "fullTitle": "Learning Assertions",
+          "timedOut": null,
+          "duration": 1730,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://example.cypress.io/');\ncy.contains('get').click();\ncy.get('#query-btn', { timeout: 6000 })\n    .should('contain', 'Button')\n    .should('have.class', 'query-btn')\n    .should('be.visible');\ncy.get('#query-btn').invoke('attr', 'id')\n    .should('equal', 'query-btn');\ncy.get('#query-btn')\n    .should('contain', 'Button')\n    .and('have.class', 'query-btn');\n//Explicit assertion\n//expect\nexpect(true).to.be.true;\n//let name = 'Komal'\n//expect(name).to.be.('Komal')\nassert.equal(4, 4, 'Not Equal');\nassert.strictEqual(4, 4, 'Not Strictly Equal');",
+          "err": {},
+          "uuid": "98197b2d-79e2-4d0b-852b-8061c10effcb",
+          "parentUUID": "794a1507-9a8f-43ef-abfa-a10485170999",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "98197b2d-79e2-4d0b-852b-8061c10effcb"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 1730,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "ab9172b9-c072-46eb-8076-3e2896e759c2",
+      "title": "",
+      "fullFile": "cypress/integration/First_File.ts",
+      "file": "cypress/integration/First_File.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "google test",
+          "fullTitle": "google test",
+          "timedOut": null,
+          "duration": 7705,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://www.google.com/');\ncy.get('[name=\"q\"]')\n    .type('Automation Step by Step {enter}');",
+          "err": {},
+          "uuid": "02dc1777-cab8-493c-a367-4c50cf188cd4",
+          "parentUUID": "ab9172b9-c072-46eb-8076-3e2896e759c2",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "02dc1777-cab8-493c-a367-4c50cf188cd4"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 7705,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "ecf6d950-41c0-40a0-91d0-80b02650b906",
+      "title": "",
+      "fullFile": "cypress/integration/my_first_test.js",
+      "file": "cypress/integration/my_first_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Search",
+          "fullTitle": "Search",
+          "timedOut": null,
+          "duration": 9844,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://youtube.com.au/');\ncy.get('#search-input > #search').type('Automation Testing{enter}'); //cy.contains('Automated').click()",
+          "err": {},
+          "uuid": "669b2dc6-7836-4017-9ae5-b1eac10490c5",
+          "parentUUID": "ecf6d950-41c0-40a0-91d0-80b02650b906",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "669b2dc6-7836-4017-9ae5-b1eac10490c5"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 9844,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "6d2a2ba6-149c-41df-a15a-18d99017f0c7",
+      "title": "",
+      "fullFile": "cypress/integration/orang_hrm.js",
+      "file": "cypress/integration/orang_hrm.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "LoginTests",
+          "fullTitle": "LoginTests",
+          "timedOut": null,
+          "duration": 11541,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://opensource-demo.orangehrmlive.com/');\ncy.get('#divUsername > .form-hint').type('Admin');\ncy.get('#txtPassword').type('admin123');\ncy.get('#btnLogin').click();\ncy.get('#menu_admin_viewAdminModule > b').click();\ncy.get('#menu_admin_viewAdminModule > b').click();\ncy.get('#btnAdd').click(); //cy.get('#systemUser_userType').find('#')",
+          "err": {},
+          "uuid": "125a89b6-efb8-4c73-a31d-2095a548c129",
+          "parentUUID": "6d2a2ba6-149c-41df-a15a-18d99017f0c7",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "125a89b6-efb8-4c73-a31d-2095a548c129"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 11541,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "0894734b-1654-4ddc-aad6-88a0bf5d027c",
+      "title": "",
+      "fullFile": "cypress/integration/Page_object_model.ts",
+      "file": "cypress/integration/Page_object_model.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "login test",
+          "fullTitle": "login test",
+          "timedOut": null,
+          "duration": 12832,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "LoginPage.navigate();\nLoginPage.enterUsername('test');\nLoginPage.enterPassword('test');",
+          "err": {},
+          "uuid": "f0032fb7-0a84-43db-8f71-7124119c9ae3",
+          "parentUUID": "0894734b-1654-4ddc-aad6-88a0bf5d027c",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "f0032fb7-0a84-43db-8f71-7124119c9ae3"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 12832,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000
